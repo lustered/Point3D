@@ -10,6 +10,7 @@ public class TestShapes
         shapes[2] = new Cylinder(new Point3D(5, -7, -35), 14, 12) ; 
         shapes[3] = new Parallelepiped(new Point3D(9, 16, 7), 19, 9, 13) ; 
 
+        System.out.println("Initial Values");
         for (Shape3D shape : shapes) 
             System.out.format("\n%s | Surface Area: %.3f", shape, shape.getSurfaceArea()) ;
 
