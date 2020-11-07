@@ -28,7 +28,7 @@ public class TestShapes
         System.out.println("\n\nArray has been sorted in descending order by distance from origin.");
 
         for (Shape3D shape : shapes) 
-            System.out.format("\n%-14s | Volume: %.3f", shape.getShapeName() , shape.getVolume()) ; 
+            System.out.format("\n%-14s | Distance from center: %.3f", shape.getShapeName() , shape.getCenterPoint()) ; 
 
     }
 }
