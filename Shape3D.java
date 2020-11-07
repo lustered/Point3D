@@ -7,7 +7,6 @@ public abstract class Shape3D implements Comparable<Shape3D>
         this.centerPoint = new Point3D(point.x(), point.y(), point.z());
     }
     
-    // 3.has a concrete method that computes and returns the distance of the center of the shape from the origin (i.e., point 0,0,0)
     public Point3D getCenterPoint() 
     {
         return centerPoint;
@@ -15,6 +14,7 @@ public abstract class Shape3D implements Comparable<Shape3D>
 
     public abstract double getSurfaceArea();
     public abstract double getVolume();
+    public abstract String getShapeName();
 
     @Override
     public int compareTo(Shape3D shape)
@@ -26,6 +26,6 @@ public abstract class Shape3D implements Comparable<Shape3D>
     @Override
     public String toString()
     {
-        return "Center: " + this.centerPoint.toString();
+        return String.format("%s: %s", "Center at", this.centerPoint.toString());
     }
 }

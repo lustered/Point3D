@@ -2,7 +2,7 @@ public class Cylinder extends Shape3D
 {
     private double height ; 
     private double radius ; 
-    private String shapeName ;
+    private final String shapeName ;
 
     public Cylinder(Point3D point, double height, double radius)
     {
@@ -24,16 +24,16 @@ public class Cylinder extends Shape3D
         return ((2 * (Math.PI * Math.pow(radius, 2))) + (2 * Math.PI * radius * height));
     }
 
-    public String getShapeName() 
-    {
-        return shapeName;
+    @Override
+    public String getShapeName() {
+        return this.shapeName;
     }
 
     @Override
     public String toString() 
     {
         
-        return String.format("\nName:\t%s\nCenter\theight:%5d\tradius:%5d", this.shapeName, super.toString(), this.height, this.radius);
+        return String.format("%-14s| %s radius: %5.2f | height: %.2f ", getShapeName(), super.toString(), this.radius, this.height);
     }
 
 }

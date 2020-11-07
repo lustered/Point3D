@@ -29,6 +29,6 @@ public class Point3D
     @Override
     public String toString()
     {
-        return String.format("(x:\t%s\ty:\t%s\tz:\t%s)", x(),y(),z());
+        return String.format("(x: %3s | y: %3s | z: %3s)", x(),y(),z());
     }
 }

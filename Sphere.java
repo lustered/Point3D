@@ -1,7 +1,7 @@
 public class Sphere extends Shape3D
 {
     private double radius ; 
-    private String shapeName ;
+    private final String shapeName ;
 
     public Sphere(Point3D point, double radius)
     {
@@ -22,16 +22,16 @@ public class Sphere extends Shape3D
         return ( 4 * (Math.PI * Math.pow(radius, 2)) );
     }
 
+    @Override
     public String getShapeName() 
     {
-        return shapeName;
+        return this.shapeName;
     }
 
     @Override
     public String toString() 
     {
-        
-        return String.format("\nName:\t%s\nCenter\tradius:%5d",this.shapeName, super.toString(), this.radius);
+        return String.format("\n%-14s| %s radius: %.2f", getShapeName(), super.toString(), this.radius);
     }
 
 }

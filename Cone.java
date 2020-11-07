@@ -4,7 +4,7 @@ public class Cone extends Shape3D
 {
     private double height ; 
     private double radius ; 
-    private String shapeName ;
+    private final String shapeName ;
 
     public Cone(Point3D point, double height, double radius)
     {
@@ -28,16 +28,17 @@ public class Cone extends Shape3D
         return ((Math.PI * radius)*(radius + slantHeight));
     }
 
+    @Override
     public String getShapeName() 
     {
-        return shapeName;
+        return this.shapeName;
     } 
 
     @Override
     public String toString() 
     {
         
-        return String.format("\nName:\t%s\nCenter\theight:%5d\tradius:%5d", this.shapeName, super.toString(), this.height, this.radius);
+        return String.format("%-14s| %s radius: %.2f | height: %.2f ", getShapeName(), super.toString(), this.radius, this.height);
     }
 
 }
