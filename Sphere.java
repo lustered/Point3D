@@ -1,13 +1,11 @@
 public class Sphere extends Shape3D
 {
     private double radius ; 
-    private final String shapeName ;
 
     public Sphere(Point3D point, double radius)
     {
         super(point);
         this.radius = radius ;
-        shapeName = "Sphere" ;
     }
 
     @Override
@@ -20,12 +18,6 @@ public class Sphere extends Shape3D
     public double getSurfaceArea() 
     {
         return ( 4 * (Math.PI * Math.pow(radius, 2)) );
-    }
-
-    @Override
-    public String getShapeName() 
-    {
-        return this.shapeName;
     }
 
     @Override

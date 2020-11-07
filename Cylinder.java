@@ -2,14 +2,12 @@ public class Cylinder extends Shape3D
 {
     private double height ; 
     private double radius ; 
-    private final String shapeName ;
 
     public Cylinder(Point3D point, double height, double radius)
     {
         super(point);
         this.height = height ;
         this.radius = radius ;
-        shapeName = "Cylinder" ;
     }
 
     @Override
@@ -22,11 +20,6 @@ public class Cylinder extends Shape3D
     public double getSurfaceArea() 
     {
         return ((2 * (Math.PI * Math.pow(radius, 2))) + (2 * Math.PI * radius * height));
-    }
-
-    @Override
-    public String getShapeName() {
-        return this.shapeName;
     }
 
     @Override

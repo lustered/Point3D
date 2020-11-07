@@ -15,21 +15,18 @@ public class TestShapes
 
         System.out.println("\n\nUnsorted Array values.");
 
-        // Print name and volume of unsorted.
         for (Shape3D shape : shapes) 
             System.out.format("\n%-14s | Volume: %.3f", shape.getShapeName() , shape.getVolume()) ; 
 
         Arrays.sort(shapes) ; 
-        System.out.println("\n\nArray has been sorted in ascending order.");
+        System.out.println("\n\nArray has been sorted in ascending order by volume.");
 
-        // Print name and volume of sorted in ascending order.
         for (Shape3D shape : shapes) 
             System.out.format("\n%-14s | Volume: %.3f", shape.getShapeName() , shape.getVolume()) ; 
 
-        Arrays.sort(shapes) ; 
-        System.out.println("\n\nArray has been sorted in descending order.");
+        Arrays.sort(shapes, new DescendingSort()) ; 
+        System.out.println("\n\nArray has been sorted in descending order by distance from origin.");
 
-        // Print name and volume of sorted in ascending order.
         for (Shape3D shape : shapes) 
             System.out.format("\n%-14s | Volume: %.3f", shape.getShapeName() , shape.getVolume()) ; 
 

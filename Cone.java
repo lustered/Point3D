@@ -4,14 +4,12 @@ public class Cone extends Shape3D
 {
     private double height ; 
     private double radius ; 
-    private final String shapeName ;
 
     public Cone(Point3D point, double height, double radius)
     {
         super(point);
         this.height = height ;
         this.radius = radius ;
-        shapeName = "Cone" ;
     }
 
     @Override
@@ -29,15 +27,8 @@ public class Cone extends Shape3D
     }
 
     @Override
-    public String getShapeName() 
-    {
-        return this.shapeName;
-    } 
-
-    @Override
     public String toString() 
     {
-        
         return String.format("%-14s| %s radius: %.2f | height: %.2f ", getShapeName(), super.toString(), this.radius, this.height);
     }
 

@@ -3,7 +3,6 @@ public class Parallelepiped extends Shape3D
     private double length ; 
     private double width ; 
     private double height ; 
-    private final String shapeName ;
 
     public Parallelepiped(Point3D point, double length, double width, double height)
     {
@@ -11,7 +10,6 @@ public class Parallelepiped extends Shape3D
         this.length = length ;
         this.width = width ;
         this.height = height ;
-        shapeName = "Parallelepiped" ;
     }
 
     @Override
@@ -29,11 +27,6 @@ public class Parallelepiped extends Shape3D
         return ( 2 * (lw + lh + hw) ) ;
     }
 
-    @Override
-    public String getShapeName() 
-    {
-        return this.shapeName ;
-    }
 
     @Override
     public String toString() 
