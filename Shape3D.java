@@ -8,7 +8,8 @@ public abstract class Shape3D implements Comparable<Shape3D>
     }
     
     // 3.has a concrete method that computes and returns the distance of the center of the shape from the origin (i.e., point 0,0,0)
-    public Point3D getCenterPoint() {
+    public Point3D getCenterPoint() 
+    {
         return centerPoint;
     }
 

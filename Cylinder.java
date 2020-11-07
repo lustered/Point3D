@@ -13,19 +13,25 @@ public class Cylinder extends Shape3D
     }
 
     @Override
-    public double getVolume() {
-        // TODO Auto-generated method stub
-        return 0;
+    public double getVolume() 
+    {
+        return Math.PI * Math.pow(radius, 2) * height ;
     }
 
     @Override
-    public double getSurfaceArea() {
-        // TODO Auto-generated method stub
-        return 0;
+    public double getSurfaceArea() 
+    {
+        return ((2 * (Math.PI * Math.pow(radius, 2))) + (2 * Math.PI * radius * height));
+    }
+
+    public String getShapeName() 
+    {
+        return shapeName;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         
         return String.format("\nName:\t%s\nCenter\theight:%5d\tradius:%5d", this.shapeName, super.toString(), this.height, this.radius);
     }

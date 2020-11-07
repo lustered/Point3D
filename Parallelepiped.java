@@ -7,21 +7,29 @@ public class Parallelepiped extends Shape3D
 
     public Parallelepiped(Point3D point, double length, double width, double height)
     {
-        super(point);
+        super(point) ;
         this.height = height ;
         shapeName = "Parallelepiped" ;
     }
 
     @Override
     public double getVolume() {
-        // TODO Auto-generated method stub
-        return 0;
+        return (length * width * height) ;
     }
 
     @Override
-    public double getSurfaceArea() {
-        // TODO Auto-generated method stub
-        return 0;
+    public double getSurfaceArea() 
+    {
+        double lw = length * width ;
+        double lh = length * height ;
+        double hw = height * width ;
+
+        return ( 2 * (lw + lh + hw) ) ;
+    }
+
+    public String getShapeName() 
+    {
+        return shapeName ;
     }
 
     @Override
