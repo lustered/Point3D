@@ -1,9 +1,16 @@
+/**
+ * Model a Parallelepiped shape.
+ */
 public class Parallelepiped extends Shape3D
 {
+    // Variable properties of parallelepiped.
     private double length ; 
     private double width ; 
     private double height ; 
 
+    /**
+     * Create a parallelepiped shape.
+     */
     public Parallelepiped(Point3D point, double length, double width, double height)
     {
         super(point) ;
@@ -28,6 +35,11 @@ public class Parallelepiped extends Shape3D
     }
 
 
+    /**
+     * Return a String with the parallelepiped's property.
+     *
+     * @return String of the parallelepiped's property.
+     */
     @Override
     public String toString() 
     {

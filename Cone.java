@@ -1,10 +1,18 @@
-import java.lang.Math ;
-
+/**Model a cone. 
+ */
 public class Cone extends Shape3D
 {
+    // Variable properties of Cone.
     private double height ; 
     private double radius ; 
 
+    /**
+     * Create a cone.
+     *
+     * @param point {@link Point3D} of the center.
+     * @param height height of the cone.
+     * @param radius radius of the cone.
+     */
     public Cone(Point3D point, double height, double radius)
     {
         super(point);
@@ -26,6 +34,11 @@ public class Cone extends Shape3D
         return ((Math.PI * radius)*(radius + slantHeight));
     }
 
+    /**
+     * Return a String with the cone's property.
+     *
+     * @return String of the cone's property.
+     */
     @Override
     public String toString() 
     {
