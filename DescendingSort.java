@@ -20,6 +20,6 @@ class DescendingSort implements Comparator<Shape3D>
         if(s1.equals(s2))
             return 0 ;
 
-        return -2;
+        return -2 ;
     }
 }

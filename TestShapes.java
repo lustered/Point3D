@@ -20,21 +20,21 @@ public class TestShapes
         for (Shape3D shape : shapes) 
             System.out.format("\n%s | Surface Area: %.3f", shape, shape.getSurfaceArea()) ;
 
-        System.out.println("\n\nUnsorted Array values.");
+        System.out.println("\n\nUnsorted Array values.") ;
 
         // Print the shape's name and the volume. Unsorted.
         for (Shape3D shape : shapes) 
             System.out.format("\n%-14s | Volume: %.3f", shape.getShapeName() , shape.getVolume()) ; 
 
         Arrays.sort(shapes) ; 
-        System.out.println("\n\nArray has been sorted in ascending order by volume.");
-
+        System.out.println("\n\nArray has been sorted in ascending order by volume.") ;
+ 
         // Print the shape's name and the volume. Sorted in ascending order.
         for (Shape3D shape : shapes) 
             System.out.format("\n%-14s | Volume: %.3f", shape.getShapeName() , shape.getVolume()) ; 
 
         Arrays.sort(shapes, new DescendingSort()) ; 
-        System.out.println("\n\nArray has been sorted in descending order by distance from origin.");
+        System.out.println("\n\nArray has been sorted in descending order by distance from origin.") ;
 
         // Print the shape's name and distance of the center point from the origin in descending order.
         for (Shape3D shape : shapes) 

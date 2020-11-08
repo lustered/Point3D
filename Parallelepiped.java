@@ -20,7 +20,8 @@ public class Parallelepiped extends Shape3D
     }
 
     @Override
-    public double getVolume() {
+    public double getVolume() 
+    {
         return (length * width * height) ;
     }
 
@@ -44,7 +45,7 @@ public class Parallelepiped extends Shape3D
     public String toString() 
     {
         return String.format("%-14s| %s length: %.2f | width: %.2f | height:%.2f",
-                getShapeName(), super.toString(), this.length, this.height, this.width);
+                getShapeName(), super.toString(), this.length, this.height, this.width) ;
     }
 
 }

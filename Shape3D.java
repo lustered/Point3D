@@ -8,15 +8,17 @@ public abstract class Shape3D implements Comparable<Shape3D>
 
     /**
      * Abstract method to get the surface area of a 3D shape.
+     *
+     * @return area of the 3D shape.
      */
-    public abstract double getSurfaceArea();
+    public abstract double getSurfaceArea() ;
 
     /**
      * Abstract method to get the volume of a 3D shape.
      *
      * @return volume of the 3D shape.
      */
-    public abstract double getVolume();
+    public abstract double getVolume() ;
 
     /**
      * Constructor for a shape with 3D points.
@@ -42,7 +44,8 @@ public abstract class Shape3D implements Comparable<Shape3D>
      * Return the name of the class.
      * @return Name of the class.
      */
-    public String getShapeName(){
+    public String getShapeName()
+    {
         return this.getClass().getCanonicalName() ;
     }
 
@@ -61,7 +64,8 @@ public abstract class Shape3D implements Comparable<Shape3D>
      * Implementation of .equals to compare {@link Shape3D} objects
      */
     @Override
-    public boolean equals(Object obj) {
+    public boolean equals(Object obj) 
+    {
         return (obj == this);
     }
 

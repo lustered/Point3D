@@ -29,7 +29,7 @@ public class Point3D
      */
     public int x()
     {
-        return this.x;
+        return this.x ;
     }
 
     /**
@@ -38,7 +38,7 @@ public class Point3D
      */
     public int y()
     {
-        return this.y;
+        return this.y ;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Point3D
      */
     public int z()
     {
-        return this.z;
+        return this.z ;
     }
 
     /**
@@ -57,6 +57,6 @@ public class Point3D
     @Override
     public String toString()
     {
-        return String.format("(x: %3s | y: %3s | z: %3s)", x(),y(),z());
+        return String.format("(x: %3s | y: %3s | z: %3s)", x(),y(),z()) ;
     }
 }

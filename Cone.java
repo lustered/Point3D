@@ -15,7 +15,7 @@ public class Cone extends Shape3D
      */
     public Cone(Point3D point, double height, double radius)
     {
-        super(point);
+        super(point) ; 
         this.height = height ;
         this.radius = radius ;
     }
@@ -23,15 +23,15 @@ public class Cone extends Shape3D
     @Override
     public double getVolume() 
     {
-        return ((Math.PI * Math.pow(radius, 2) * height) / 3);
+        return ((Math.PI * Math.pow(radius, 2) * height) / 3) ; 
     }
 
     @Override
     public double getSurfaceArea() 
     {
-        double slantHeight = Math.sqrt((Math.pow(radius, 2) + Math.pow(height, 2)));
+        double slantHeight = Math.sqrt((Math.pow(radius, 2) + Math.pow(height, 2))) ; 
 
-        return ((Math.PI * radius)*(radius + slantHeight));
+        return ((Math.PI * radius)*(radius + slantHeight)) ; 
     }
 
     /**
@@ -42,7 +42,7 @@ public class Cone extends Shape3D
     @Override
     public String toString() 
     {
-        return String.format("%-14s| %s radius: %.2f | height: %.2f ", getShapeName(), super.toString(), this.radius, this.height);
+        return String.format("%-14s| %s radius: %.2f | height: %.2f ", getShapeName(), super.toString(), this.radius, this.height) ; 
     }
 
 }

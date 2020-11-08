@@ -14,20 +14,20 @@ public class Sphere extends Shape3D
      */
     public Sphere(Point3D point, double radius)
     {
-        super(point);
+        super(point) ;
         this.radius = radius ;
     }
 
     @Override
     public double getVolume() 
     {
-        return ( (4.0 / 3.0) * (Math.PI * Math.pow(radius, 3)) );
+        return ( (4.0 / 3.0) * (Math.PI * Math.pow(radius, 3)) ) ;
     }
 
     @Override
     public double getSurfaceArea() 
     {
-        return ( 4 * (Math.PI * Math.pow(radius, 2)) );
+        return ( 4 * (Math.PI * Math.pow(radius, 2)) ) ;
     }
 
     /**
@@ -38,7 +38,7 @@ public class Sphere extends Shape3D
     @Override
     public String toString() 
     {
-        return String.format("%-14s| %s radius: %.2f", getShapeName(), super.toString(), this.radius);
+        return String.format("%-14s| %s radius: %.2f", getShapeName(), super.toString(), this.radius) ;
     }
 
 }

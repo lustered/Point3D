@@ -30,7 +30,7 @@ public class Cylinder extends Shape3D
     @Override
     public double getSurfaceArea() 
     {
-        return ((2 * (Math.PI * Math.pow(radius, 2))) + (2 * Math.PI * radius * height));
+        return ((2 * (Math.PI * Math.pow(radius, 2))) + (2 * Math.PI * radius * height)) ;
     }
 
     /**
@@ -41,7 +41,7 @@ public class Cylinder extends Shape3D
     @Override
     public String toString() 
     {
-        return String.format("%-14s| %s radius: %5.2f | height: %.2f ", getShapeName(), super.toString(), this.radius, this.height);
+        return String.format("%-14s| %s radius: %5.2f | height: %.2f ", getShapeName(), super.toString(), this.radius, this.height) ;
     }
 
 }
