@@ -13,11 +13,14 @@ public abstract class Shape3D implements Comparable<Shape3D>
 
     /**
      * Abstract method to get the volume of a 3D shape.
+     *
+     * @return volume of the 3D shape.
      */
     public abstract double getVolume();
 
     /**
      * Constructor for a shape with 3D points.
+     * @param point {@link Point3D} with the center of the shape.
      */
     public Shape3D(Point3D point)
     {
