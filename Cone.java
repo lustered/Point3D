@@ -1,4 +1,5 @@
-/**Model a cone. 
+/**
+ * Model a cone. 
  */
 public class Cone extends Shape3D
 {
@@ -44,5 +45,4 @@ public class Cone extends Shape3D
     {
         return String.format("%-14s| %s radius: %.2f | height: %.2f ", getShapeName(), super.toString(), this.radius, this.height) ; 
     }
-
 }

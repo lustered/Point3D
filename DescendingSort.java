@@ -6,10 +6,10 @@ import java.util.Comparator;
  */
 class DescendingSort implements Comparator<Shape3D>
 {
-    @Override
     /**
      * {@inheritDoc}
      */
+    @Override
     public int compare(Shape3D s1, Shape3D s2)
     {
         if(s1.getCenterPoint() < s2.getCenterPoint())

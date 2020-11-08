@@ -44,7 +44,7 @@ public class Parallelepiped extends Shape3D
     @Override
     public String toString() 
     {
-        return String.format("%-14s| %s length: %.2f | width: %.2f | height:%.2f",
+        return String.format("%-14s| %s length: %.2f | width : %.2f  | height:%.2f",
                 getShapeName(), super.toString(), this.length, this.height, this.width) ;
     }
 
